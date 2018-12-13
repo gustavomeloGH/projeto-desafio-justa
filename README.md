@@ -54,3 +54,14 @@
     <p>3 - Executar comando: nom install e logo após, ng serve para rodar aplicação.</p>
   </li>
 </ul>
+
+
+<h3><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"></svg></a>Informações importantes: </h3>
+<ul>
+  <li>
+    <p>Na pasta backend -> conf -> application.conf, procurar por: #playjongo.uri="COLOCAR_URI_AQUI" </p>
+  </li>
+  <li>
+    <p>Coloque a URL do servidor do mongo neste local para liberar o acesso.</p>
+  </li>
+</ul>
