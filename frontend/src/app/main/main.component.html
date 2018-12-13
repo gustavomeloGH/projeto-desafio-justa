@@ -1,0 +1,16 @@
+<section class="container">
+    <section class="row mt-5">
+        <article class="col-style col-md-6">    
+            <h4 class="text-center mt-4">
+                <i class="fa fa-list-ol pr-1" aria-hidden="true"></i>
+                Lista das tarefas
+            </h4>
+            <div class="col-size-min">
+                <app-list (outputItemToUpdate)="update($event)" #listComponent></app-list>
+            </div>
+        </article>
+        <article class="col-style col-size col-md-6">    
+            <app-save (outputSubmitedSuccess)="refresh()" #saveComponent></app-save>
+        </article>
+    </section>
+</section>

@@ -1,0 +1,10 @@
+# Routes
+
+# Home
+GET     /                                controllers.ApplicationController.index
+
+#TaskController
+POST    /task/insert                          controllers.TaskController.insert
+GET     /task/list                             controllers.TaskController.list()
+POST    /task/update                           controllers.TaskController.update
+DELETE  /task/delete/:id                       controllers.TaskController.delete(id: String)

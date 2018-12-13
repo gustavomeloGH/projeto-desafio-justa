@@ -1,0 +1,16 @@
+li {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.18);
+}
+
+.pull-right {
+    cursor: pointer;
+}
+
+.not-found {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    color: #d6d6d6;
+}

@@ -1,0 +1,22 @@
+<ul class="list-unstyled py-2" *ngIf="list">
+  <li *ngFor="let item of list" class="m-3 card">
+    <div class="card-header font-weight-bold text-center">
+      {{item.name}}
+    </div>
+    <div class="card-body">
+      <div class="pull-left">
+          {{item.description}}  
+      </div>  
+      <div class="pull-right">
+        <i class="fa fa-pencil-square-o pr-2 text-warning" aria-hidden="true" (click)="update(item)"></i>
+        <i class="fa fa-trash text-danger" aria-hidden="true" (click)="remove(item)"></i>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div class="not-found" *ngIf="isNullOrEmptyList()">
+    <i class="fa fa-frown-o" aria-hidden="true"></i>
+    <h4>Não encontramos nenhuma tarefa.</h4>
+    <h5>Comece agora, crie uma nova tarefa ao lado!</h5>
+</div>

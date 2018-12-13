@@ -1,0 +1,39 @@
+<section class="p-4">
+  <h4 class="text-center mt-5">{{ title }}</h4>
+  <form [formGroup]="form">
+    <div class="input-group mb-4">
+        <label class="font-weight-bold">Nome</label>
+        <div class="input-group has-icon  has-name-icon">
+            <input  formControlName="name" 
+                    placeholder="Digite nome da tarefa" 
+                    type="text" 
+                    class="form-control"/>
+
+          <ul *ngIf="( form.get('name').hasError('required') && form.get('name').touched )" class="form-errors input-group">
+              <li>*O campo nome é obrigatório</li>
+          </ul>  
+        </div> 
+    </div>
+
+    <div class="input-group">
+      <label class="font-weight-bold">Descrição</label>
+      <div class="input-group has-icon  has-name-icon">
+          <input  formControlName="description" 
+                  placeholder="Digite uma descrição para tarefa" 
+                  type="text" 
+                  class="form-control"/>
+          <ul *ngIf="( form.get('description').hasError('required') && form.get('description').touched  )" class="form-errors input-group">
+              <li>*O campo descrição é obrigatório</li>
+          </ul> 
+      </div> 
+  </div>
+
+  <div class="text-center spinner" *ngIf="desableButton">
+    <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+  </div>
+
+  <button class="btn btn-block btn-success mt-4" [disabled]="!form.valid || desableButton" (click)="submit()">Submeter</button>
+
+
+  </form>
+</section>

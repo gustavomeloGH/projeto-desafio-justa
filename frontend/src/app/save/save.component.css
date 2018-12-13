@@ -1,0 +1,40 @@
+form {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    padding: 80px;  
+    width: 100%;
+}
+
+
+.form-errors{
+    display: block;
+    list-style: none;
+    margin: 5px 0 0 0!important;
+    padding: 0;
+    padding-left: .5rem!important;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 88%;
+    color: #FF0039;
+}
+
+.form-errors li{
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-weight: 600;
+    color: #374f68;
+}
+
+section {
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.spinner {
+    padding-top: 20px;
+    color: cornflowerblue;
+}
