@@ -1,4 +1,4 @@
-# Play Hello World Web Tutorial for Java
+# Play Framework
 
 To follow the steps in this tutorial, you will need the correct version of Java and a build tool. You can build Play projects with sbt or Gradle. Since sbt works particularly well with Play, we recommend trying this example with sbt. The template requires:
 
