@@ -25,7 +25,11 @@ public class TaskController extends Controller {
     }
     
     public Result list() {
-        return ok(Json.toJson(taskBusiness.list()));
+        try {
+            return ok(Json.toJson(taskBusiness.list()));
+        } catch (Exception ex){
+            return status(400, Json.toJson(new ErrorMessageException(ex.getMessage())));
+        }
     }
 
     public Result update() {
